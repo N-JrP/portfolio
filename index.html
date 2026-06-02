@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neha Parepalli | Data Engineer & GenAI Portfolio</title>
+    <meta name="description" content="Interactive galaxy portfolio of Neha Parepalli: Data Engineer, Generative AI Engineer, and AI-powered data product builder." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <canvas id="stars"></canvas>
+
+    <main class="portfolio-shell">
+
+        <section class="identity-panel">
+            <p class="eyebrow">DATA ENGINEERING · GENERATIVE AI · AI SOLUTIONS</p>
+
+            <h1>Neha Parepalli</h1>
+
+            <h2>Data Engineer | Generative AI Engineer</h2>
+
+            <p class="tagline">
+                Building AI-powered data products that transform complex information
+                into reliable, actionable intelligence.
+            </p>
+
+            <div class="quick-stats">
+                <div>
+                    <strong>3 Years</strong>
+                    <span>Professional Experience</span>
+                </div>
+                <div>
+                    <strong>10</strong>
+                    <span>Total Public Projects</span>
+                </div>
+                <div>
+                    <strong>Germany</strong>
+                    <span>Based</span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a href="https://github.com/N-JrP" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/neha-parepalli-165766297/" target="_blank">LinkedIn</a>
+                <a href="assets/resume.pdf" target="_blank">Resume</a>
+                <a href="mailto:nehaparepalli@gmail.com">Email</a>
+            </div>
+
+            <p class="hint">
+                Hover over a planet, constellation, or skill moon to explore.
+            </p>
+        </section>
+
+        <section class="galaxy-panel">
+
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="orbit orbit-c"></div>
+            <div class="orbit orbit-d"></div>
+            <div class="orbit orbit-e"></div>
+
+            <button class="core constellation-core planet" data-section="identity" aria-label="Neha brand core">
+
+                <!-- Core stars used for N / Data / AI morphing -->
+                <span class="core-star core-s1"></span>
+                <span class="core-star core-s2"></span>
+                <span class="core-star core-s3"></span>
+                <span class="core-star core-s4"></span>
+                <span class="core-star core-s5"></span>
+                <span class="core-star core-s6"></span>
+                <span class="core-star core-s7"></span>
+                <span class="core-star core-s8"></span>
+
+                <!-- Core connecting lines used for N / Data / AI morphing -->
+                <span class="core-line core-l1"></span>
+                <span class="core-line core-l2"></span>
+                <span class="core-line core-l3"></span>
+                <span class="core-line core-l4"></span>
+                <span class="core-line core-l5"></span>
+                <span class="core-line core-l6"></span>
+                <span class="core-line core-l7"></span>
+                <span class="core-line core-l8"></span>
+
+            </button>
+
+            <div class="celestial-system experience-system">
+                <button class="planet planet-experience priority-planet" data-section="experience">
+                    <span>Experience</span>
+                </button>
+
+                <div class="moon-track experience-track">
+                    <div class="moon-holder" style="--angle: 210deg; --radius: 140px; --counter: -210deg;">
+                        <button class="skill-moon" data-section="skillData">DATA</button>
+                    </div>
+
+                    <div class="moon-holder" style="--angle: 25deg; --radius: 140px; --counter: -25deg;">
+                        <button class="skill-moon" data-section="skillGenAI">GEN AI</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="celestial-system projects-system">
+                <button class="planet planet-projects priority-planet" data-section="projects">
+                    <span>Projects</span>
+                </button>
+
+                <div class="moon-track projects-track">
+                    <div class="moon-holder"
+                        style="--angle: 270deg; --radius: 140px; --counter: -270deg;">
+                        <button class="skill-moon" data-section="skillPlatform">
+                            PLATFORM
+                        </button>
+                    </div>
+
+                    <div class="moon-holder"
+                        style="--angle: 30deg; --radius: 140px; --counter: -30deg;">
+                        <button class="skill-moon" data-section="skillBackend">
+                            BACKEND
+                        </button>
+                    </div>
+
+                    <div class="moon-holder"
+                        style="--angle: 150deg; --radius: 140px; --counter: -150deg;">
+                        <button class="skill-moon" data-section="skillBigData">
+                            BIG DATA
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="planet planet-education priority-planet" data-section="education">
+                <span>Education</span>
+            </button>
+
+            <button class="constellation-journey" data-section="journey">
+                <span class="star s1"></span>
+                <span class="star s2"></span>
+                <span class="star s3"></span>
+                <span class="star s4"></span>
+                <span class="star s5"></span>
+                <span class="star s6"></span>
+                <span class="star s7"></span>
+
+                <span class="constellation-line l1"></span>
+                <span class="constellation-line l2"></span>
+                <span class="constellation-line l3"></span>
+                <span class="constellation-line l4"></span>
+                <span class="constellation-line l5"></span>
+                <span class="constellation-line l6"></span>
+                <span class="constellation-line l7"></span>
+
+                <strong>Journey</strong>
+            </button>
+
+        </section>
+
+        <aside class="preview-card hidden" id="previewCard"></aside>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
