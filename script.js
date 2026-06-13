@@ -64,7 +64,7 @@ const data = {
         previewTitle: "AI, Data & Platform Engineering Projects",
         html: `
             <ul>
-                <li><strong>RCA Copilot</strong> · AI incident intelligence</li>
+                <li><strong>AI Incident Copilot</strong> · Production RCA with RAG</li>
                 <li><strong>Document Intelligence</strong> · Semantic search & analytics</li>
                 <li><strong>Clickstream Lakehouse</strong> · PySpark lakehouse</li>
                 <li><strong>Market Data Platform</strong> · Airflow & CI/CD</li>
@@ -72,13 +72,13 @@ const data = {
 
             <div class="chips">
                 <span>FastAPI</span>
+                <span>React</span>
                 <span>RAG</span>
                 <span>LangChain</span>
-                <span>DuckDB</span>
-                <span>dbt</span>
-                <span>PySpark</span>
-                <span>Airflow</span>
+                <span>ChromaDB</span>
+                <span>Ollama</span>
                 <span>Docker</span>
+                <span>PySpark</span>
             </div>
         `
     },
