@@ -837,12 +837,34 @@ body {
     font-size: 13px;
 }
 
-/* RESPONSIVE */
+/* LAPTOP / TABLET VIEW */
 
 @media (max-width: 1100px) {
     .portfolio-shell {
         grid-template-columns: 1fr;
         padding: 32px 24px;
+        gap: 22px;
+    }
+
+    .identity-panel {
+        text-align: center;
+    }
+
+    .identity-panel h2 {
+        white-space: normal;
+    }
+
+    .tagline {
+        margin: 0 auto;
+    }
+
+    .quick-stats {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .actions {
+        justify-content: center;
     }
 
     .preview-card {
@@ -853,18 +875,182 @@ body {
     }
 }
 
+
+/* MOBILE VIEW */
+
 @media (max-width: 680px) {
-    .quick-stats {
-        grid-template-columns: 1fr;
+    .portfolio-shell {
+        padding: 26px 18px 36px;
+        overflow: hidden;
+    }
+
+    .identity-panel,
+    .eyebrow,
+    .hint {
+        text-align: center;
+    }
+
+    .eyebrow {
+        font-size: 10px;
+        letter-spacing: 2px;
+        line-height: 1.6;
     }
 
     .identity-panel h1 {
-        font-size: 56px;
+        font-size: 52px;
+    }
+
+    .identity-panel h2 {
+        font-size: 22px;
+        white-space: normal;
+    }
+
+    .tagline {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .quick-stats {
+        grid-template-columns: 1fr;
+        max-width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .actions {
+        justify-content: center;
+    }
+
+    .actions a {
+        padding: 11px 18px;
+        font-size: 14px;
     }
 
     .galaxy-panel {
+        width: 390px;
+        height: 500px;
+        max-width: 390px;
+        margin: 18px auto 24px;
+        transform: none;
+    }
+
+    .orbit-a { width: 34%; height: 34%; }
+    .orbit-b { width: 58%; height: 58%; }
+    .orbit-c { width: 82%; height: 82%; }
+
+    .orbit-d,
+    .orbit-e {
+        display: block;
+    }
+
+    .orbit-d {
+        width: 105%;
+        height: 105%;
+    }
+
+    .orbit-e {
+        width: 120%;
+        height: 120%;
+    }
+
+    .core {
+        width: 156px;
+        height: 156px;
+        left: calc(25% - 78px);
+        top: calc(20% - 78px);
+        transform: scale(0.72);
+        transform-origin: center;
+    }
+
+    .planet-experience,
+    .planet-projects,
+    .planet-education {
+        width: 58px;
+        height: 58px;
+        font-size: 9px;
+    }
+
+    .experience-system {
+        width: 150px;
+        height: 150px;
+        left: 20%;
+        top: 72%;
+        transform: translate(-50%, -50%);
+    }
+
+    .projects-system {
+        width: 160px;
+        height: 160px;
+        left: 82%;
+        top: 76%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+    }
+
+    .planet-education {
+        left: 34%;
+        top: -4%;
+        bottom: auto;
+    }
+
+    .skill-moon {
+        width: 28px;
+        height: 28px;
+        font-size: 4.5px;
+        letter-spacing: 0.1px;
+    }
+
+    .skill-moon::after {
+        width: 34px;
+        height: 34px;
+    }
+
+    .experience-track .moon-holder {
+        transform: rotate(var(--angle)) translateX(62px);
+    }
+
+    .projects-track .moon-holder {
+        transform: rotate(var(--angle)) translateX(66px);
+    }
+
+    .constellation-journey {
+        width: 115px;
+        height: 90px;
+        right: 2%;
+        top: 3%;
+        transform: scale(0.68);
+        transform-origin: top right;
+    }
+
+    .constellation-journey:hover {
+        transform: scale(0.68);
+    }
+
+    .preview-card {
+        width: 100%;
+        margin: 0 auto;
+        padding: 22px;
+        border-radius: 22px;
+    }
+}
+
+/* SMALL MOBILE VIEW */
+
+@media (max-width: 420px) {
+    .galaxy-panel {
+        width: 330px;
+        max-width: 330px;
+        height: 330px;
+        margin-top: 0;
+    }
+
+    .identity-panel h1 {
+        font-size: 46px;
+    }
+
+    .core {
         transform: scale(0.86);
-        margin: -30px auto;
     }
 }
 
@@ -997,4 +1183,138 @@ body {
     position: relative;
     left: 39px;
     top: -47px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+========================= */
+
+@media (max-width: 900px) {
+    .portfolio-shell {
+        min-height: auto;
+        padding: 28px 18px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        align-items: center;
+    }
+
+    .identity-panel {
+        width: 100%;
+        text-align: center;
+    }
+
+    .eyebrow {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+        margin-bottom: 16px;
+    }
+
+    .identity-panel h1 {
+        font-size: clamp(42px, 13vw, 62px);
+        line-height: 0.95;
+        margin-bottom: 18px;
+    }
+
+    .identity-panel h2 {
+        font-size: clamp(18px, 5vw, 26px);
+        white-space: normal;
+    }
+
+    .tagline {
+        font-size: 16px;
+        line-height: 1.55;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .quick-stats {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 420px;
+        margin: 24px auto 0;
+    }
+
+    .actions {
+        justify-content: center;
+    }
+
+    .actions a {
+        padding: 11px 18px;
+        font-size: 14px;
+    }
+
+    .galaxy-panel {
+        width: 430px;
+        max-width: 100%;
+        transform: scale(0.9);
+        transform-origin: center;
+        margin: -20px auto 0;
+    }
+
+    .preview-card {
+        position: static;
+        width: 100%;
+        max-width: 430px;
+        max-height: none;
+        margin: -10px auto 0;
+        padding: 22px;
+    }
+}
+
+@media (max-width: 520px) {
+    .portfolio-shell {
+        padding: 24px 14px 34px;
+    }
+
+    .galaxy-panel {
+        width: 390px;
+        transform: scale(0.82);
+        margin: -45px auto -35px;
+    }
+
+    .planet-experience,
+    .planet-projects,
+    .planet-education {
+        width: 122px;
+        height: 122px;
+        font-size: 15px;
+    }
+
+    .skill-moon {
+        width: 70px;
+        height: 70px;
+        font-size: 9px;
+    }
+
+    .skill-moon::after {
+        width: 94px;
+        height: 94px;
+    }
+
+    .core {
+        width: 132px;
+        height: 132px;
+        left: calc(50% - 66px);
+        top: calc(50% - 66px);
+    }
+
+    .preview-card {
+        border-radius: 22px;
+        padding: 20px;
+    }
+
+    .preview-card h3 {
+        font-size: 17px;
+    }
+
+    .preview-card p,
+    .preview-card li {
+        font-size: 13px;
+    }
+
+    .chips span {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
 }
