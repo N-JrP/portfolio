@@ -25,16 +25,6 @@ https://n-jrp.github.io/portfolio/
 
 Python · SQL · Pandas · NumPy · RAG · LangGraph · FAISS · PySpark · Databricks · Airflow · dbt · DuckDB · FastAPI · Docker · GitHub Actions · Azure · PostgreSQL · Streamlit · OpenTelemetry · Grafana
 
-## Run Locally
-
-```powershell
-python -m http.server 8020
-```
-
-Then open:
-
-http://localhost:8020
-
 ## Contact
 
 - LinkedIn: https://www.linkedin.com/in/neha-parepalli-165766297/
